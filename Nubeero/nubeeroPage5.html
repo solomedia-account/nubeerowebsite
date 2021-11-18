@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 5</title>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 20px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 19px;
+          box-sizing: border-box;
+          background: #1E2833;;
+          color: white;
+        }
+        
+        input[type=submit] {
+          width: 200px;
+          background-color: 	#09a1e7;
+          color: white;
+          padding: 14px 20px;
+          margin-left: 75%;
+          border: none;
+          border-radius: 19px;
+          cursor: pointer;
+        }
+        input[type=file] {
+          width: 200px;
+          background-color: 	 #1D2024;;
+          color: white;
+          padding: 14px 20px;
+          border: none;
+          border-radius: 19px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #1E2833;
+          padding: 20px;
+        }
+        h1{
+          color: white;
+        }
+        p{
+          color: #ccc;
+        }
+        form{
+          color: #ccc;
+        }
+        body{
+          background-color: #1E2833;
+        }
+        .nub{
+    background-color: hsla(205.71, 13.73%, 10%, 0.8) ;
+    height: 60px;
+    width: auto;
+    border: 1px solid #BBBEC2;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    opacity: 0.7;
+
+}
+
+.nub a{
+      float: right;
+      padding: 19px 30px;
+      text-decoration: none;
+      color: floralwhite;     
+}
+
+.nub a:hover{
+    color: hsl(213.17, 86.01%, 71.96%) ;
+} 
+        </style>
+</head>
+<body>
+  <nav class="nub">
+    <img src="">
+    <a href="#" target="blank">CONTACT</a>
+    <a href="#" target="blank">RESEARCH</a>
+    <a href="#" target="blank">SERVICES</a>
+    <a href="#" target="blank">WHAT WE DO</a>
+    <a href="#" target="blank">HOME</a>
+</nav>
+    <h1>Software Development</h1>
+    <div>
+        <h1>Onboarding</h1>
+        <p>please fill in the details so we can get in touch with you</p>
+        <hr>
+        <form action="/action_page.php">
+          <br><br>
+            
+            <label for="name" ><span style="font-size: 20px;color: white; font-weight: bold;"> Project/Product Name</span> <br>  do we refer your project as? E.g "Beto App"</label>
+            <input type="text" id="pname" name="productName" placeholder="Enter here"><br><br>
+        
+            <label for="summary"><span style="font-size: 20px;color: white; font-weight: bold;">Project Summary </span> <br>General review or summary of what your project entails. E.g "The Motivv App is aimed to bridge the gap between clients and designers" or "Uber but for bikes" or "Something like facebook"</label>
+            <input type="text" id="psum" name="projectSummary" placeholder="Enter here"><br><br>
+        
+           <label for=""><span style="font-size: 20px;color: white; font-weight: bold;"><br>Project Brief</span><br>Upload a more detailed documentation of your if you have one.(you can add multiple files).</label><br>
+            <input type="file" id="file" name="fileName" multiple><br><br>
+        
+            <label for="phoneNumber"><span style="font-size: 20px;color: white; font-weight: bold;">Project Brief & Features</span> In the event of no file, kindle write your project brief.</label>
+            <input type="text" id="pBrief" name="projectBrief" placeholder="Enter here"><br><br>
+          </form>
+           
+          <div>
+            
+            
+              <p><a href="https://www.google.com/" style="color: #ccc; text-decoration: none;">Back</a> <span><input type="submit" value="NEXT STEP" ></span></p>
+              
+           
+            </div>
+         
+    
+</body>
+</html>

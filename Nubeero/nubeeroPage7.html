@@ -4,126 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="asset/css/pg7.css"> 
+
+    <title>Nubeero - Technology Services, Intermidiation & Consultancy</title>
     <style>
-        div {
-          border-radius: 5px;
-          background-color: #1E2833;
-          padding: 20px;
-        }
-        input[type=submit]:hover {
-          background-color: #45a049;
-        }
-        input[type=submit] {
-          width: 200px;
-          background-color: 	#09a1e7;
-          color: white;
-          padding: 14px 20px;
-          margin-left: 75%;
-          border: none;
-          border-radius: 19px;
-          cursor: pointer;
-        }
-        h1{
-          color: white;
-        }
-        p{
-          color: #ccc;
-        }
-        form{
-          color: #ccc;
-        }
-        body{
-          background-color: #1E2833;
-        }
-        h4{
-            color: white;
-        }
-        .nub{
-    background-color: hsla(205.71, 13.73%, 10%, 0.8) ;
-    height: 60px;
-    width: auto;
-    border: 1px solid #BBBEC2;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    opacity: 0.7;
-
+        html { scroll-behavior: smooth; }
+@font-face {
+  font-family: euclid ;
+  src: url(asset/font/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Light.ttf);
 }
-
-.nub a{
-      float: right;
-      padding: 19px 30px;
-      text-decoration: none;
-      color: floralwhite;     
-}
-
-.nub a:hover{
-    color: hsl(213.17, 86.01%, 71.96%) ;
-} 
+   
     </style>
 </head>
 <body>
-    <nav class="nub">
-        <img src="">
-        <a href="#" target="blank">CONTACT</a>
-        <a href="#" target="blank">RESEARCH</a>
-        <a href="#" target="blank">SERVICES</a>
-        <a href="#" target="blank">WHAT WE DO</a>
-        <a href="#" target="blank">HOME</a>
+    <nav class="navbar">
+      <img src="asset/images/nubeero_logo.png" style="padding-left: 4%; padding-top: 1%;">
+        <a href="#"  >CONTACT</a>
+        <a href="#"  >RESEARCH</a>
+        <a href="#"  >SERVICES</a>
+        <a href="#"  >WHAT WE DO</a>
+        <a href="#"  >HOME</a>
     </nav>
-    <h1>Software Development</h1>
+    <h1 style=" margin-top: 100px; margin-left: 140px;">Software Development</h1>
     <div>
+      
+        <div class="sidenav">
+        <a href="#" >Basic Info<i class="glyphicon glyphicon-user"></i></a>
+        <a href="#">Onboarding</a>
+        <a href="#" >Project Brief</a>
+        <a href="#" style="color: #4BA0FE;">Branding</a>
+        <a href="#">Funding</a>
+        <a href="#">Timeline</a>
+      </div>
+      <div style="float: right; margin-top: -850px;margin-right: 180px;margin-left: 390px;">
         <h1>Branding</h1>
         <p>Please fill  in the details below so we can get in touch with you</p>
         <hr>
 
-        <h4>Have you ever built a digital product/service before?</h4>
-        <p>this consists of being actively involved in the design, development or launch process of any website/application.</p>
+        <p><span style="font-size: 20px; font-weight: 600; color: white;"> You ever built a digital product/service before?</span><br>
+        This consists of being actively involved in the design, development or launch process of any website/application.</p>
         <form action="/action_page.php">
-            <input type="checkbox" id="yes" name="yes" value="Yes">
-            <label for="yes"> Yes</label><br>
-            <input type="checkbox" id="No" name="No" value="No">
-            <label for="No"> No</label><br>  
+            
+            <label for="yes" class="container"> Yes
+              <input type="radio" id="yes" name="radio" value="Yes">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label for="No" class="container"> No
+              <input type="radio" id="No" name="radio" value="No">
+              <span class="checkmark"></span>
+            </label> 
+            
           </form>
 
-        <h4>Which of the following best applies to you</h4>
-        <form action="/action_page.php">
-            <input type="checkbox" id="" name="" value="">
-            <label for=""> I am a start up looking to build a new project</label><br>
-            <input type="checkbox" id="" name="" value="">
-            <label for=""> I am an existing business looking to buils a new product</label><br> 
-            <input type="checkbox" id="" name="" value="">
-            <label for="">I am an existing business looking to enhance an existing product</label>
+        <h4 style="font-size: 20px; font-weight: 600; color: white;">Which of the following best applies to you</h4>
+        <form >
+
+           
+            
+            <label for="i" class="container"> I am a start up looking to build a new project
+              <input type="radio" id="i" name="radio" value="">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label for="j" class="container"> I am an existing business looking to buils a new product
+              <input type="radio" id="j" name="radio" value="">
+              <span class="checkmark"></span>
+            </label>
+            
+            <label for="k" class="container">I am an existing business looking to enhance an existing product
+              <input type="radio" id="k" name="radio" value="">
+              <span class="checkmark"></span>
+            </label>
           </form>
-        <h4>Which of these services are you  in need of?</h4>
-        <p>Kindly select one or more services you wantus to provide.</p>
+          <br>
+        <p style="font-size: 20px; font-weight: 600; color: white;" >Which of these services are you  in need of?<span style="font-size: 14px; font-weight: 400; color: #BBBEC2;"><br>
+        Kindly select one or more services you wantus to provide.</span></p>
         <form action="/action_page.php">
-            <input type="checkbox">
-            <label>Branding Service(Design, Identity and Awareness)</label><br>
-            <input type="checkbox">
-            <label>Mobile App(Design and Development)</label><br>
-            <input type="checkbox">
-            <label>Digital Marketing or Social Media Management(Service and Graphic Design Retainership)</label><br>
-            <input type="checkbox">
-            <label>Graphic Design For Promotional campaigns, App Store Asset e.t.c(One-time Service)</label><br>
-            <input type="checkbox">
-            <label>UI/UX Only(User Story, Plan and Design)</label><br>
-            <input type="checkbox">
-            <label>Contect Creation(Audio, Visual), Copy Writing </label><br>
-            <input type="checkbox">
-            <label>Software Development(Improving,Rebuilding and Maintainance)</label><br>
-            <input type="checkbox">
-            <label>Product Branding, Strategy & Management(Kindly Select If You don't already have a brand or a team for this) </label><br>
-            <input type="checkbox">
-            <label>Other:</label><br>
+            
+            <label for="l" class="container"> Branding Service(Design, Identity and Awareness)
+              <input type="checkbox" id="l" name="checkbox">
+              <span class="square"></span>
+            </label>
+            
+            <label for="m" class="container">Mobile App(Design and Development)
+              <input type="checkbox" id="m" name="checkbox">
+              <span class="square"></span>
+            </label>
+            
+            <label for="n" class="container">Digital Marketing or Social Media Management(Service and Graphic Design Retainership)
+              <input type="checkbox" id="n" name="checkbox">
+              <span class="square"></span>
+            </label>
+            
+            <label for="o" class="container">Graphic Design For Promotional campaigns, App Store Asset e.t.c(One-time Service)
+              <input type="checkbox" id="o" name="checkbox"> 
+              <span class="square"></span>
+            </label>
+            
+            <label for="p" class="container">UI/UX Only(User Story, Plan and Design)
+              <input type="checkbox" id="p" name="checkbox">
+            </label>
+            
+            <label for="q" class="container">Contect Creation(Audio, Visual), Copy Writing 
+              <input type="checkbox" id="q" name="checkbox">
+              <span class="square"></span>
+            </label>
+            
+            <label for="r" class="container">Software Development(Improving,Rebuilding and Maintainance)
+              <input type="checkbox" id="r" name="checkbox">
+              <span class="square"></span>
+            </label>
+            
+            <label for="s" class="container"> Product Branding, Strategy & Management(Kindly Select If You don't already have a brand or a team for this) 
+              <input type="checkbox" id="s">
+              <span class="square"></span>
+            </label>
+            
+            <label for="t" class="container">Other:
+              <input type="checkbox" id="t" name="checkbox">
+              <span class="square"></span>
+            </label>
         </form>
         <div>
-            <p><a href="https://www.google.com/" style="color: #ccc; text-decoration: none;">Back</a> <span><input type="submit" value="NEXT STEP" ></span></p>
+            <p><a href="nubeeroPage6.html" style="color: #ccc; text-decoration: none;">Back</a> <span><a href="nubeeroPage8.html"><input type="submit" value="NEXT STEP" ></a></span></p>
             
          
           </div>
     </div>
+  </div>
     
 </body>
 </html>

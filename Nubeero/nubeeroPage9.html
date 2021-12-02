@@ -4,106 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nubeero Page 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="asset/css/pg9.css"> 
+
+    <title>Nubeero - Technology Services, Intermidiation & Consultancy</title>
     <style>
-        input[type=date], select {
-  width: 100%;
-  padding: 20px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 19px;
-  box-sizing: border-box;
-  background: #1E2833;
-  color: #ccc;
-}
-span{
-    font-size: 30px;
-    font-weight: bold;
-}
-div {
-          border-radius: 5px;
-          background-color: #1E2833;
-          padding: 20px;
-        }
-        input[type=submit]:hover {
-          background-color: #45a049;
-        }
-        input[type=submit] {
-          width: 200px;
-          background-color: 	#09a1e7;
-          color: white;
-          padding: 14px 20px;
-          margin-left: 75%;
-          border: none;
-          border-radius: 19px;
-          cursor: pointer;
-        }
-        h1{
-          color: white;
-        }
-        p{
-          color: #ccc;
-        }
-        form{
-          color: #ccc;
-        }
-        body{
-          background-color: #1E2833;
-        }
-        h4{
-            color: white;
-        }
-        .nub{
-    background-color: hsla(205.71, 13.73%, 10%, 0.8) ;
-    height: 60px;
-    width: auto;
-    border: 1px solid #BBBEC2;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    opacity: 0.7;
-
-}
-
-.nub a{
-      float: right;
-      padding: 19px 30px;
-      text-decoration: none;
-      color: floralwhite;     
-}
-
-.nub a:hover{
-    color: hsl(213.17, 86.01%, 71.96%) ;
-} 
+      @font-face {
+    font-family: euclid ;
+    src: url(asset/font/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Light.ttf);  }
     </style>
 </head>
 <body>
-    <nav class="nub">
-        <img src="">
-        <a href="#" target="blank">CONTACT</a>
-        <a href="#" target="blank">RESEARCH</a>
-        <a href="#" target="blank">SERVICES</a>
-        <a href="#" target="blank">WHAT WE DO</a>
-        <a href="#" target="blank">HOME</a>
+    <nav class="navbar">
+      <img src="asset/images/nubeero_logo.png" style="padding-left: 4%; padding-top: 1%;">
+        <a href="#"   >CONTACT</a>
+        <a href="#"   >RESEARCH</a>
+        <a href="#"   >SERVICES</a>
+        <a href="#"   >WHAT WE DO</a>
+        <a href="#"   >HOME</a>
     </nav>
-    <h1>Software Development</h1>
+    <h1 style=" margin-top: 100px; margin-left: 140px;">Software Development</h1>
     <div>
+      <div class="sidenav" >
+        <a href="#" >Basic Info<i class="glyphicon glyphicon-user"></i></a>
+        <a href="#">Onboarding</a>
+        <a href="#" >Project Brief</a>
+        <a href="#" >Branding</a>
+        <a href="#">Funding</a>
+        <a href="#" style="color: #4BA0FE;">Timeline</a>
+      </div>
+      <div style="float: right; margin-top: -800px;margin-right: 180px;margin-left: 390px;">
         <p><span>Timeline</span><br>please fill in the details below so we can get in touch with you</p>
         <hr>
     <form action="/action_page.php">
             
-        <label for="sDate"><span> How soon would you like this project to commence?<br></span> what is your expected start date?<br></label>
-        <input type="date" id="sDate" name="startDate" placeholder="Enter here"><BR>
+        <label for="sDate"><span style=" font-weight: 600; color: #fff;"> How soon would you like this project to commence?<br></span> <span style="font-size: 14px;font-weight: 400; color: #BBBEC2;">what is your expected start date?</span><br></label>
+        <input type="date" id="sDate" name="startDate" placeholder="Enter here"><BR><br><br>
     
-        <label for="eDate"><span>When would you like the project to be completed?</span><br> What is your expected end date?<br></label>
+        <label for="eDate"><span style="color: #fff;" > When would you like the project to be completed?</span><br> <span style="font-size: 14px;font-weight: 400; color: #BBBEC2;">What is your expected end date</span>?<br></label>
         <input type="date" id="eDate" name="endDate" placeholder="Enter here">
     </form>
        
     <div>
-        <p><a href="https://www.google.com/" style="color: #ccc; text-decoration: none;">Back</a> <span><input type="submit" value="SUBMIT" ></span></p>
+        <p><a href="nubeeroPage8.html" style="color: #ccc; text-decoration: none;">Back</a> <span><a href="#"><input type="submit" value="SUBMIT" ></a></span></p>
         
      
       </div>
+    </div>
 </body>
 </html>

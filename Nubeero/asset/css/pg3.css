@@ -101,6 +101,13 @@ a{
     width: 600px;
     height: 100px;
 }
+@media only screen and (max-width:500px){
+    .button{
+        width: 500px;
+        height: 100px;
+        margin-left: 15%;
+    }
+}
 
 img{
     margin-left: 23px;

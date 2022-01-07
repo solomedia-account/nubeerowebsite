@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Nubeero - Technology Services, Intermidiation & Consultancy</title></head>
+    <style>
+         html { scroll-behavior: smooth; }
+        @font-face {
+        font-family: euclid ;
+        src: url(asset/font/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Regular.ttf);
+        
+
+    }
+    body{
+        background-color: #1E2833;
+        color: #ffffff;
+        font-family: euclid;
+    }
+    .navba {        
+        overflow: hidden;
+        background-color:rgba(0, 0, 0,);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 85px;
+        margin-left: -8px;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border:1px solid rgba(255, 255, 255, 0.2);
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        z-index:1;
+    }
+
+    .navba a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 19px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navba a:hover {
+  
+        color: #4BA0FE;
+    }
+    hr{
+        border: 1px solid #6B7076;
+    }
+    .top{
+        font-size: 35px;
+        text-align: center;
+    }
+    .bottom{
+        font-size: 18px;
+        color: #BBBEC2;
+    }
+
+    .form-control{
+        border: 1px solid #6B7076;
+        border-radius: 20px;
+        background-color: #1E2833;
+        height: 60px;
+    }
+
+
+
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: 700px;
+        background-color: #1E2833;
+        position: absolute;
+        overflow: auto;
+        color: #BBBEC2;
+        border-right: 1px solid #6B7076;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .sidebar a {
+        display: block;
+        color: #BBBEC2;
+        padding: 16px;
+        text-decoration: none;
+    }
+ 
+    .sidebar a.active {
+        color: #4BA0FE;
+    }
+
+
+
+    div.content {
+        margin-left: 400px;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-bottom: 1px solid #6B7076;
+        border-right: none;
+    }
+
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+    #side{
+        margin-bottom: 50px;
+    }
+
+    #top{
+        margin-top: 15px;
+    }
+    /* The container for the checkbox*/
+.containe {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containe input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #1E2833;
+  border: 1px solid #6B7076;
+  border-radius: 90px;
+}
+.square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #1E2833;
+  border: 1px solid #6B7076;
+  border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.containe:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* On mouse-over, add a grey background color */
+.containe:hover input ~ .square {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containe input:checked ~ .checkmark {
+  background-color: #4BA0FE
+}
+/* When the radio button is checked, add a blue background */
+.containe input:checked ~ .square {
+  background-color: #4BA0FE
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+    </style>
+<body>
+    <nav class="navba">
+        <img src="asset/images/logo.svg" style="padding-left: 4%; padding-top: 1%;">
+        <a href="#home"  id="top" style="margin-right: 140px;">CONTACT US</a>
+        <a href="#whatWeDo" id="top">RESEARCH</a>
+        <a href="#services" id="top">SERVICES</a>
+        <a href="#research" id="top">WHAT WE DO</a>
+        <a href="#contact" id="top">HOME</a>
+    </nav>
+
+    <h1 style="margin-top: 140px; margin-left: 140px; font-weight: 400;">Software Development</h1>
+
+    <div   class="container" style="margin-top: 75px">
+        <div class="sidebar" style="color: #BBBEC2;">
+            <a  id="side">Basic Info</a>
+            <a id="side">Onboarding</a>
+            <a id="side">Project Brief</a>
+            <a class="active" id="side">Branding</a>
+            <a id="side">Funding</a>
+            <a id="side">Timeline</a>
+          </div>
+          <div class="container">
+            <div class="content">
+                <h1 style="font-weight: 100; font-size: 35px;">Branding</h1>
+        <p style="color: #BBBEC2;">Please fill  in the details below so we can get in touch with you</p>
+        <hr>
+        <p><span style="font-size: 20px; font-weight: 600; color: white;"> Have you ever built a digital product/service before?</span><br>
+            This consists of being actively involved in the design, development or launch process of any website/application.</p>
+
+            <form action="/action_page.php">
+            
+                <label for="yes" class="containe"> Yes
+                  <input type="radio" id="yes" name="radio" value="Yes">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label for="No" class="containe"> No
+                  <input type="radio" id="No" name="radio" value="No">
+                  <span class="checkmark"></span>
+                </label> 
+                
+              </form>
+              <h4 style="font-size: 20px; font-weight: 600; color: white;">Which of the following best applies to you</h4>
+              <form >
+      
+                 
+                  
+                  <label for="i" class="containe"> I am a start up looking to build a new project
+                    <input type="radio" id="i" name="radio" value="">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label for="j" class="containe"> I am an existing business looking to buils a new product
+                    <input type="radio" id="j" name="radio" value="">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label for="k" class="containe">I am an existing business looking to enhance an existing product
+                    <input type="radio" id="k" name="radio" value="">
+                    <span class="checkmark"></span>
+                  </label>
+                </form>
+                <br>
+              <p style="font-size: 20px; font-weight: 600; color: white;" >Which of these services are you  in need of?<span style="font-size: 14px; font-weight: 400; color: #BBBEC2;"><br>
+              Kindly select one or more services you wantus to provide.</span></p>
+              <form action="/action_page.php">
+                  
+                  <label for="l" class="containe"> Branding Service(Design, Identity and Awareness)
+                    <input type="checkbox" id="l" name="checkbox">
+                    <span class="square"></span>
+                  </label>
+                  
+                  <label for="m" class="containe">Mobile App(Design and Development)
+                    <input type="checkbox" id="m" name="checkbox">
+                    <span class="square"></span>
+                  </label>
+                  
+                  <label for="n" class="containe">Digital Marketing or Social Media Management(Service and Graphic Design Retainership)
+                    <input type="checkbox" id="n" name="checkbox">
+                    <span class="square"></span>
+                  </label>
+                  
+                  <label for="o" class="containe">Graphic Design For Promotional campaigns, App Store Asset e.t.c(One-time Service)
+                    <input type="checkbox" id="o" name="checkbox"> 
+                    <span class="square"></span>
+                  </label>
+                  
+                  <label for="p" class="containe">UI/UX Only(User Story, Plan and Design)
+                    <input type="checkbox" id="p" name="checkbox">
+                  </label>
+                  
+                  <label for="q" class="containe">Contect Creation(Audio, Visual), Copy Writing 
+                    <input type="checkbox" id="q" name="checkbox">
+                    <span class="square"></span>
+                  </label>
+                  
+                  <label for="r" class="containe">Software Development(Improving,Rebuilding and Maintainance)
+                    <input type="checkbox" id="r" name="checkbox">
+                    <span class="square"></span>
+                  </label>
+                  
+                  <label for="s" class="containe"> Product Branding, Strategy & Management(Kindly Select If You don't already have a brand or a team for this) 
+                    <input type="checkbox" id="s">
+                    <span class="square"></span>
+                  </label>
+                  
+                  <label for="t" class="containe">Other:
+                    <input type="checkbox" id="t" name="checkbox">
+                    <span class="square"></span>
+                  </label>
+              </form>
+
+
+              <a href="softwareDevelopment6.html"><button type="NEXT STEP" class="btn btn-primary" style="background-color: #4BA0FE;width: 160px; height: 55px;border-radius: 90px; float: right; margin-top: 50px;">NEXT STEP</button>
+              </a>
+                      <a href="softwareDevelopment4.html"><p style="margin-top: 66px; color: white; padding-bottom: 195px;">back</p></a>
+
+             </div>
+         </div>
+    </div>
+
+</body>
+</html>

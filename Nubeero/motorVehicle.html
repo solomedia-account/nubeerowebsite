@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Nubeero - Technology Services, Intermidiation & Consultancy</title>
+    <style>
+    html { scroll-behavior: smooth; }
+        @font-face {
+        font-family: euclid ;
+        src: url(asset/font/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Light.ttf);
+    }
+    body{
+        background-color: #1E2833;
+        color: #ffffff;
+        font-family: euclid;
+    }
+
+    .navba {        
+        overflow: hidden;
+        background-color:rgba(0, 0, 0,);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 85px;
+        margin-left: -8px;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border:1px solid rgba(255, 255, 255, 0.2);
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        z-index:1;
+    }
+
+    .navba a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 19px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navba a:hover {
+  
+        color: #4BA0FE;
+    }
+    hr{
+        border: 1px solid #6B7076;
+    }
+
+    .top{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .bottom{
+        font-size: 18px;
+        color: #BBBEC2;
+    }
+
+    .form-control{
+        border: 1px solid #6B7076;
+        border-radius: 20px;
+        background-color: #1E2833;
+        height: 60px;
+        
+       
+    }
+    input[type=submit] {
+    width: 160px;
+          height: 55px;
+          background-color: 	#4BA0FE;
+          color: white;
+          padding: 14px 20px;
+          margin-left: 80%;
+          border: none;
+          border-radius: 90px;
+          cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: scale(0.9);
+}
+
+    </style>
+</head>
+<body >
+
+
+
+    
+    <nav class="navba">
+        <img src="asset/images/logo.svg" style="padding-left: 4%; padding-top: 1%;">
+        <a href="#home"  id="top" style="margin-right: 140px;">CONTACT US</a>
+        <a href="#whatWeDo" id="top">RESEARCH</a>
+        <a href="#services" id="top">SERVICES</a>
+        <a href="#research" id="top">WHAT WE DO</a>
+        <a href="#contact" id="top">HOME</a>
+    </nav>
+    
+
+
+    <div class="container" style="margin-top: 200px; width: auto;height: auto; ">
+       <div class="container">
+        <div class="container">
+            <div class="container">
+                <div class="container">
+                    <p class="top">Motor Vehicle Insurance <br> <span class="bottom">please give us info about your vehicle </span></p>
+                    <hr>
+        
+                    <form style="padding-bottom: 160px;">
+                        <div class="form-group">
+                            <label for="validationDefault05">License Plate Number</label>
+                            <input type="for" class="form-control" id="LicensePlateNumber" aria-describedby="emailHelp" placeholder="Enter License Plate Number"  style="background-color: #1E2833; color: white;" required>  
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Chassis Number</label>
+                            <input type="for" class="form-control" id="LicensePlateNumber" aria-describedby="emailHelp" placeholder="Enter License Plate Number"  style="background-color: #1E2833; color: white;" required>  
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="">Vehicle Brand</label>
+                            <select class="form-control" id="vehicleBrand"  style="background-color: #1E2833; color: white;" required>
+                                <option value="">Select Vehicle Brand</option>
+                                <option value="ACURA">ACURA</option>
+                                <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                <option value="AUDI">AUDI</option>
+                                <option value="BENTLEY">BENTLEY</option>
+                                <option value="BMW">BMW</option>
+                                <option value="BUICK">BUICK</option>
+                                <option value="CADILLAC">CADILLAC</option>
+                                <option value="CHEVROLET">CHEVROLET</option>
+                                <option value="CHRYSLER">CHRYSLER</option>
+                                <option value="DODGE">DODGE</option>
+                                <option value="FERRARI">FERRARI</option>
+                                <option value="FORD">FORD</option>
+                                <option value="GMC">GMC</option>
+                                <option value="HONDA">HONDA</option>
+                                <option value="HUMMER">HUMMER</option>
+                                <option value="HYUNDAI">HYUNDAI</option>
+                                <option value="INFINITI">INFINITI</option>
+                                <option value="ISUZU">ISUZU</option>
+                                <option value="JAGUAR">JAGUAR</option>
+                                <option value="JEEP">JEEP</option>
+                                <option value="KIA">KIA</option>
+                                <option value="LAMBORGHINI">LAMBORGHINI</option>
+                                <option value="LAND ROVER">LAND ROVER</option>
+                                <option value="LEXUS">LEXUS</option>
+                                <option value="LINCOLN">LINCOLN</option>
+                                <option value="LOTUS">LOTUS</option>
+                                <option value="MASERATI">MASERATI</option>
+                                <option value="MAYBACH">MAYBACH</option>
+                                <option value="MAZDA">MAZDA</option>
+                                <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+                                <option value="MERCURY">MERCURY</option>
+                                <option value="MINI">MINI</option>
+                                <option value="MITSUBISHI">MITSUBISHI</option>
+                                <option value="NISSAN">NISSAN</option>
+                                <option value="PONTIAC">PONTIAC</option>
+                                <option value="PORSCHE">PORSCHE</option>
+                                <option value="ROLLS-ROYCE">ROLLS-ROYCE</option>
+                                <option value="SAAB">SAAB</option>
+                                <option value="SATURN">SATURN</option>
+                                <option value="SUBARU">SUBARU</option>
+                                <option value="SUZUKI">SUZUKI</option>
+                                <option value="TOYOTA">TOYOTA</option>
+                                <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                <option value="VOLVO">VOLVO</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="year">Year</label>
+                            <select class="form-control" id="year"  style="background-color: #1E2833; color: white;" required>
+                                <option value="">Select Year</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Model</label>
+                            <input type="for" class="form-control" id="Model" aria-describedby="modelNumber" placeholder="Enter Model"  style="background-color: #1E2833; color: white;" required>  
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Vehicle Value</label>
+                            <input type="for" class="form-control" id="LicensePlateNumber" aria-describedby="emailHelp" placeholder="Enter Vehicle Value"  style="background-color: #1E2833; color: white;" required>  
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Insurance Type</label>
+                            <select class="form-control" id="exampleFormControlSelect1"  style="background-color: #1E2833; color: white;" required>
+                                <option value="">Select Insurance Type</option>
+                                <option value="Comprehensive">Comprehensive</option>
+                                <option value="Third Party">Third Party</option>
+                            </select>
+                        </div>
+                        <a href="http://programminghead.com">  
+                            <input type="submit"/>  
+                           </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

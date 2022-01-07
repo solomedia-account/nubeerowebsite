@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Nubeero - Technology Services, Intermidiation & Consultancy</title>
+    <style>
+    html { scroll-behavior: smooth; }
+        @font-face {
+        font-family: euclid ;
+        src: url(asset/font/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Regular.ttf);
+        
+
+    }
+    body{
+        background-color: #1E2833;
+        color: #ffffff;
+        font-family: euclid;
+    }
+   
+
+    .navba {        
+        overflow: hidden;
+        background-color:rgba(0, 0, 0,);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 85px;
+        margin-left: -8px;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border:1px solid rgba(255, 255, 255, 0.2);
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        z-index:1;
+    }
+
+    .navba a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 19px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navba a:hover {
+  
+        color: #4BA0FE;
+    }
+    hr{
+        border: 1px solid #6B7076;
+    }
+    .top{
+        font-size: 35px;
+        text-align: center;
+    }
+    .bottom{
+        font-size: 18px;
+        color: #BBBEC2;
+    }
+
+    .form-control{
+        border: 1px solid #6B7076;
+        border-radius: 20px;
+        background-color: #1E2833;
+        height: 60px;
+    }
+
+
+
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: 700px;
+        background-color: #1E2833;
+        position: absolute;
+        height: 100%;
+        overflow: auto;
+        color: #BBBEC2;
+        border-right: 1px solid #6B7076;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .sidebar a {
+        display: block;
+        color: #BBBEC2;
+        padding: 16px;
+        text-decoration: none;
+    }
+ 
+    .sidebar a.active {
+        color: #4BA0FE;
+    }
+
+
+
+    div.content {
+        margin-left: 400px;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-bottom: 1px solid #6B7076;
+        border-right: none;
+    }
+
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+    #side{
+        margin-bottom: 45px;
+    }
+
+    #top{
+        margin-top: 15px;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navba">
+        <img src="asset/images/logo.svg" style="padding-left: 4%; padding-top: 1%;">
+        <a href="#home"  id="top" style="margin-right: 140px;">CONTACT US</a>
+        <a href="#whatWeDo" id="top">RESEARCH</a>
+        <a href="#services" id="top">SERVICES</a>
+        <a href="#research" id="top">WHAT WE DO</a>
+        <a href="#contact" id="top">HOME</a>
+    </nav>
+    <h1 style="margin-top: 140px; margin-left: 140px; font-weight: 400;">Software Development</h1>
+    <div class="container" style="margin-top: 75px">
+        
+        <div class="sidebar" style="color: #BBBEC2;">
+            <a class="active" id="side">Basic Info</a>
+            <a id="side">Onboarding</a>
+            <a id="side">Project Brief</a>
+            <a id="side">Branding</a>
+            <a id="side">Funding</a>
+            <a id="side">Timeline</a>
+
+          </div>
+          
+          <div class="container">
+            <div class="content">
+                <h2 style="font-weight: 100; font-size: 35px;">Let’s start with your information</h2>
+                <p style="color: #BBBEC2;">Please fill in the details below so we can get in touch with you</p>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Full Name</label>
+                        <input type="for" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="Enter Your Full Name" style="background-color: #1E2833; color: white;" required>  
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email Address</label>
+                        <input type="for" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter Email" style="background-color: #1E2833; color: white;" required>  
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Phone Number</label>
+                        <input type="for" class="form-control" id="phoneNumber" aria-describedby="emailHelp" placeholder="Enter Phone Number" style="background-color: #1E2833; color: white;">  
+                    </div>
+                </form>
+                
+                <a href="softwareDevelopment3.html"><button type="submit" class="btn btn-primary" style="background-color: #4BA0FE;width: 160px; height: 55px;border-radius: 90px; float: right; margin-top: 50px;">NEXT STEP</button>
+                </a>
+                        <a href="softwareDevelopment.html"><p style="margin-top: 66px; color: white; padding-bottom: 195px;">back</p></a>
+              </div>
+          </div>
+    </div>
+</body>
+</html>

@@ -1,85 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" id="home">
 <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>Nubeero - Technology Services, Intermidiation & Consultancy</title>
-
-<style>
-  html { scroll-behavior: smooth; }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nubeero - Technology Services, Intermidiation & Consultancy</title>
+    <style>
+      html { scroll-behavior: smooth; }
     @font-face {
     font-family: euclid ;
     src: url(asset/font/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Light.ttf);
   }
-
-
-.navbar {
-  overflow: hidden;
-  background-color:rgba(0, 0, 0,);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 70px;
-  margin-left: -8px;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border:1px solid rgba(255, 255, 255, 0.2);
-  border-left: none;
-  border-top: none;
-  border-right: none;
-}
-
-.navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 19px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-body{
+ 
+        body{
   background-color: #1E2833;
   font-family: euclid;
+  background-image: url('asset/images/Backgroung.png'); 
+  background-repeat: no-repeat; 
+  background-size: 100% 840px;
 }
-* {
-  box-sizing: border-box;
+@media screen and (max-width:700px) {
+   body{
+    background-size: auto;
+   }
 }
+#submi {
+  width: 150px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, .4);
+  color: #FFFFFF;
+  padding: 20px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 90px;
+  font-size: 14PX;
+  cursor: pointer;
+  
+  margin-top: 40px;
+      
 
-
-.column {
-  float: left;
-  width: 44%;
-  padding: 10px;
-  height: 300px; 
-  margin-right:1%;
-  text-align: justify;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row{
-  margin-left: 144px; 
-  margin-right: 140px;  
-}
-
-input[type=submit] {
+    }
+    input[type=submit] {
   width: 150px;
   height: 50px;
   background-color: 	#171719;
@@ -93,149 +55,446 @@ input[type=submit] {
   margin-top: 40px;
 }
 
-input[type=submi] {
-  width: 150px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, .4);
-  color: #FFFFFF;
-  padding: 20px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 90px;
-  font-size: 14PX;
-  cursor: pointer;
-  margin-left: 140px;
-  margin-top: 40px;
-      
+.sub{
+    width: 170px;
+  height: 30px;
+  border-radius: 70px;
+  border: 1px solid rgba(75, 160, 254, 0.1);
+  font-size: 12px;
+  background: rgba(75, 160, 254, 0.05);
+  color: #4BA0FE;
+  padding-left: 8px;
+}
+
+         
+          #second{
+            color: #4BA0FE;  font-size: 25px;padding-top:467px ; margin-left: auto;margin-right: auto;
+          }
+          @media only screen  and (max-width:800px){
+              #second{
+                  padding-top: 864px;
+                  margin-left: auto;
+                  margin-right: auto;
+                  font-size: 20px;
+              }
+          }
+          #secon{
+            margin-left: auto;
+             text-align: center; 
+             font-size: 18PX;
+             margin-right: auto;
+          }
+          @media only screen  and (max-width:800px){
+              #second{
+                  padding-top: 864px;
+                  margin-left: auto;
+                  margin-right: auto;
+                  font-size: 15px;
+              }
+          }
+          #group{
+            width: 700px;
+          }
+
+          @media only screen and (max-width:1000px) {
+              #group{
+                  width: 500px;
+              }
+          }
+          @media screen and (max-width:500px) {
+              #group{
+                  width: 400px;
+              }
+          }
+
+          #image{
+            margin-left: 86px;
+            margin-top: -100px; 
+          }
+          @media only screen and (max-width:1000px) {
+              #image{
+                 margin-left:0 ;
+                 margin-top: -50px;
+              }
+          }
+          @media screen and (max-width:500px) {
+            #image{
+                 margin-left:0 ;
+              }
+          }
+          #imag{
+            margin-left: 86px;
+            margin-top: -100px; 
+          }
+          @media only screen and (max-width:1000px) {
+              #imag{
+                 margin-left:0 ;
+                 margin-top: 0;
+              }
+          }
+          @media screen and (max-width:500px) {
+            #image{
+                 margin-left:0 ;
+                 
+                 
+              }
+          }
+          #insur{
+            margin-left: 86px
+          }
+          @media only screen and (max-width:1000px) {
+              #insur{
+                 margin-left:0 ;
+                 margin-top: 0;
+              }
+          }
+          @media screen and (max-width:500px) {
+            #insur{
+                 margin-left:0 ;
+              }
+          }
+          #collecting{
+              margin-top: -150px;
+          }
+          @media only screen and (max-width:1000px) {
+              #collecting{
+                 margin-top:0;
+              }
+          }
+        #some{
+            padding-bottom:360px ; 
+            margin-left: 10%;
+         background-image: url();
+         background-image: linear-gradient(to right, rgba(30,40,51,1.0), rgba(30,40,51,0.9)),url('asset/images/hexagon.png');
+
+                background-repeat: no-repeat; 
+                background-position: right center;
+                z-index: -1;
+                
+        }
+        #top_logo{
+            margin-left: -35%;
+        }
+        @media only screen and (max-width:900px) {
+              #top_logo{
+                 margin-left:0;
+              }
+          }
+
+       /*menu*/
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*header styly*/
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+            z-index: 1; 
+}
+/*hamburger menu*/
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFF;
+}
+/*other menu*/
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-link:hover{
+    color: #4BA0FE;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            
     }
 
-   </style>
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+        
+    </style>
 </head>
-<body style="background-image: url('asset/images/Backgroung.png');  height: 846px; width: 100%;background-repeat: no-repeat; margin-bottom: 360px;">
-  <!--menu-->  
-  <nav class="navbar">
-        <img src="asset/images/nubeero_logo.png" style="padding-left: 4%; padding-top: 1%;">
-        <a href="#contact" >CONTACT</a>
-        <a href="#research" >RESEARCH</a>
-        <a href="#services" >SERVICES</a>
-        <a href="#whatWeDo" >WHAT WE DO</a>
-        <a href="#home" >HOME</a>
-    </nav>
-<!--first background image-->
-    <div >
-        <h1 id="home" style="font-weight: 400;font-size: 60px; color: #fff; margin-top: 316px;margin-left: 140px; margin-right: 488px;">Intermediation, Tech Solutions & Consulting</h1>
-        <p style="margin-left: 140px;margin-right: 468px; font-weight: 400;font-size: 20px;color: #fff;">Nubeero is a consultancy and technology intermediation service provider that also offers services in software development</p>
-        <span><a href="#"><input type="submi" value="GET STARTED" ></a></span>
-        <br><br><br>
-    </div>
-    <!--user patner section-->
-<div style="margin-top: 20%;padding-bottom: 177px;">
-    <h4 style="font-size: 30px;color: #fff;margin-left: 8%;">USER PARTNERS<span><img src="asset/images/group_logo.png" alt="" style="margin-left: 95px; width: 781px; height: 62px;"><br>
-        <div style="margin-top: 45px;">
-            <img src="asset/images/accelerex_logo.png" alt="" style="margin-left: 350px;">
-            <img src="asset/images/leadway_logo.png" alt="" style="margin-left: 45px;">
-            <img src="asset/images/suntrust_logo.png" alt="" style="margin-left: 40px;">
-            <img src="asset/images/rubies_logo.png" alt="" style="margin-left: 50px;"id="whatWeDo">
-        </div>
-    </span></h4>  
+<body >
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img src="asset/images/logo.svg" alt=""></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#whatwedo" class="nav-link">WHAT WE DO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#research" class="nav-link">RESEARCH</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT US</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+<div class="container" style="color: white; margin-left: 10%;" >
+    <P style="font-size: 60px; font-weight: 400;margin-top: 200px;">Intermediation, Tech <br>Solutions & Consulting</P>
+    <P style="font-weight: 400; font-size: 20px;">Nubeero is a consultancy and technology intermediation service <br>provider that also offers services in software development</P>
+    <span><a href="softwareDevelopment.html"><input type="submit" value="GET STARTED" id="submi"></a></span>
 </div>
-<!--what we do section-->
-<div >
-  <div class="row" style="padding-bottom: 20px; " >
-    <div class="column" style="width: 30%; height: 520px; background-color: #171719;">
-        <img src="asset/images/insure_tech.png" alt="" style="width: 300px;height: 235px; margin-left: -10px;margin-top: -10px;">
-      <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px;">INSURANCE TECH</h3> 
-      <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are using deep learning trained artificial intelligence (AI) to handle the tasks of Insurance brokers and find the right mix of policies to complete an individuals or Group coverage.</P>
-      <span><a href="nubeeroPage2.html"><input type="submit" value="GET INSURANCE" ></a></span>
-    </div>
-    <div class="column" style="width: 30%; height: 520px; background-color: #171719; margin-left: 30px;">
-      <img src="asset/images/merchant_services.png" alt="" style="margin-top: -10px; margin-left: -10px; width: 300px; height: 235px;">
-      <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px;">MERCHANT SERVICES</h2>
-      <p style="color: #fff; margin-left: 20px;">Maximize your business’s operations with innovative and trusted merchant services, payment processing services and solutions.</p>
-      <span ><a href=" https://relief.nubeero.com/"><input type="submit" value="GET STARTED" style="margin-top: 60px;" ></a></span>
-    </div>
-    <div class="column" style="width: 30%; height: 520px;  margin-left: 30px;">
-      <h2 style=" color:#4BA0FE ;font-size: 40PX; font-weight: 400; margin-left: 20px; margin-top: 70PX;">WHAT WE DO</h2>
-      <p style="color: #fff; margin-left: 20px; margin-top: 40px;">We provide innovative solutions for insurance, business process optimization & ecommerce services. Our promise is that we are growth enablers serving the needs of the industries in which we play.</p>
-      </div>
-  </div>
-  <div class="row" style=" padding-bottom: 360px;" >
-    <div class="column" style="width: 30%; height: 520px; background-color: #171719;">
-        <img src="asset/images/software_development.png" alt="" style="width: 300px;height: 235px; margin-left: -10px;margin-top: -10px;">
-      <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px;">SOFTWARE DEVELOPMENT</h3> 
-      <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are an experienced Enterprise Solutions delivery company with proven track records in various sectors, including Digital Insurance Solutions, Commercial banking, Digital Banking, Agency Banking, Digital Insurance...</P>
-      <span><a href="nubeeropage3.html"><input type="submit" style="margin-top: 25px;"value="GET STARTED" ></a></span>
-    </div>
-    <div class="column" style="width: 30%; height: 520px; background-color: #171719; margin-left: 30px;">
-      <img src="asset/images/intermediation.png" alt="" style="margin-top: -10px; margin-left: -10px; width: 300px; height: 235px;">
-      <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px;">INTERMEDIATION</h2>
-      <p style="color: #fff; margin-left: 20px;">We are positioned to help businesses take advantage of emerging technologies as well as the ability to absorb the technology while also performing corresponding research and development and training activities</p>
-      <span><a href="#"><input type="submit" style="margin-top: 15px;" value="LEARN MORE" ></a></span>
-    </div>
-    <div class="column" style="width: 30%; height: 520px; margin-left: 30px;">
-      <img src="asset/images/male-collecting-data-from-server-2426392 1 (1).png" alt="" style="margin-top: -150px; margin-left: -10px;">
-      
-    </div>
-    
-  </div>
-</div>
-<!--portfolio page-->
-<div style="background-color: #fff; padding-bottom: 174px;">
-    <div class="row" style="background-color: #F2EFE6; width: 960px; height: 481px; margin-top: -175px; position: absolute; ">
-        <div class="column" style="width: 376px;">
-            <img src="asset/images/pexels-oladimeji-ajegbile-2698465 1.png" alt="" style="width: 376px; height: 481px; margin-top: -9px; margin-left: -9px;" >
-        </div>
-        <div class="column" style="margin-top: 90px; margin-left: 85px; ">
-          <img src="asset/images/colon.png" alt="" style="margin-bottom: 50px;"> <img src="asset/images/colon.png" alt="" style="margin-bottom: 50px;">
-            <p style="text-align: center; line-height: 2.6; ">An end user solution that essentially manages their insurance cover portfolio and guides desicion making as regards type of cover and affordable policies. This provides the customer with the right kind of cover across all facets of the daily lives & business interactions</p>
-          <div style="text-align: right; font-size: 16px;"><p>Valentine Ofili</p>
-          <p style="font-size: 14px; font-style: italic;"id="research"> Software Engineer</p>
+  <div class="container" style="padding-bottom: 125px; margin-top: 300px; margin-left: 7%;">
+      <div class="row">
+          <div class="col">
+              <h4 style="font-size: 30px;margin-left: 8%; color: white;" id="whatwedo">USER PARTNERS</h4>
           </div>
-        </div>
-    </div >
-    <!--research section-->
-    <p style="color: #4BA0FE;  font-size: 25px;padding-top:460px ; text-align: center;">INNOVATIVE SOLUTIONS FOR INSURTECH</p>
-    <p style="margin-left: 20%; text-align: center; width: 721px; font-size: 18PX;">Our AI powered platform manages the insurance portfolio of average citizens in <br>these countries based on environmental risk factors</p>
-    <div class="row" style="margin-top: 65px;">
-        <div class="column" >
-          <p style="color: #4BA0FE; font-size: 20px;" >AI POWERED PLATFORM</p>
-          <p style="text-align: justify;">Our research also focuses on engineering our AI platform to address the need to build the public trust in the local insurance landscape by providing simplified consumer education and gather feedback from customers for continuous improvement.</p>
-        </div>
-        <div class="column" style="width: 535px; height: 360px;">
-          <img src="asset/images/ai-powered-platform.png" alt="">
-        </div>
+          <div class="col" id="top_logo" >
+              
+              <img src="asset/images/Old_Mutual_logo logo.svg" alt="" style="width: 220px;">
+              <img src="asset/images/crowd_force.svg" alt=""style='margin-left:50px; width: 220px'>
+              <img src="asset/images/access_bank logo.svg" alt="">
+          </div>
       </div>
-      <div class="row" style="padding-top:140px" >
-        <div class="column">
-            <img src="asset/images/insuretech.png" alt="" style="width: 490px;height: 360px; margin-left: -50px;">
+      <div class="row">
+          <div class="col">
+            
+          </div>
+          <div class="col" style="margin-left: -350px;" >
+            <img src="asset/images/accelerex_logo.png" style="margin-left: 25px;" alt="" >
+            <img src="asset/images/suntrust_logo.png" style="margin-left: 25px;" alt="" >
+            <img src="asset/images/leadway_logo.png" style="margin-left: 25px" alt="" >
+            <img src="asset/images/rubies_logo.png" style="margin-left: 25px;" alt="" id="whatWeDo">
+          </div>
+         
+      </div>
+  </div>
+
+
+  <div class="container" id="some" >
+      <div class="row">
+          <div class="col" style="background-color: #171719; background-image: url('asset/images/insure_tech.png'); background-repeat: no-repeat; background-size: 100% 230px; ">
+              <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px; margin-top: 250px;">INSURANCE TECH</h3> 
+              <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are using deep learning trained artificial intelligence (AI) to handle the tasks of Insurance brokers and find the right mix of policies to complete an individuals or Group coverage.</P>
+              <span><a href="motorVehicle.html"><input type="submit" value="GET INSURANCE" style="margin-top: 70px;"></a></span>
+              <br><br><br><br>
+          </div>
+          <div class="col" style="background-color: #171719; ; margin-left: 30px; background-image: url('asset/images/merchant_services.png'); background-repeat: no-repeat; background-size: 100% 230px;">
+              <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px; margin-top: 250px;">MERCHANT SERVICES</h2>
+              <p style="color: #fff; margin-left: 20px;">Maximize your business’s operations with innovative and trusted merchant services, payment processing services and solutions.</p>
+              <span ><a href=" https://relief.nubeero.com/"><input type="submit" value="GET STARTED" style="margin-top: 60px;" ></a></span>
+          </div>
+          <div class="col"> 
+              <h2 style=" color:#4BA0FE ;font-size: 40PX; font-weight: 400; margin-left: 30px; margin-top: 70PX;">WHAT WE DO</h2>
+              <p style="color: #fff; margin-left: 20px; margin-top: 40px; text-align: justify;">We provide innovative solutions for insurance, business process optimization & ecommerce services. Our promise is that we are growth enablers serving the needs of the industries in which we play.</p>
+          </div>
+      </div>
+      <div class="row" style="margin-top:20px; text-align: justify;">
+          <div class="col" style="background-color:#171719;  background-image: url('asset/images/software_development.png'); background-repeat: no-repeat; background-size: 100% 230px; ">
+              <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px;margin-top: 250px;">SOFTWARE DEVELOPMENT</h3> 
+              <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are an experienced Enterprise Solutions delivery company with proven track records in various sectors, including Digital Insurance Solutions, Commercial banking, Digital Banking, Agency Banking, Digital Insurance...</P>
+              <span><a href="softwareDevelopment.html" ><input type="submit" style="margin-top: 50px; "value="GET STARTED" ></a></span>
+              <br><br><br><br>
+          </div>
+          <div class="col" style="background-color: #171719; margin-left: 30px;  background-image: url('asset/images/intermediation.png'); background-repeat: no-repeat; background-size: 100% 230px; ">
+              <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px;margin-top: 250px;">INTERMEDIATION</h2>
+              <p style="color: #fff; margin-left: 20px;">We are positioned to help businesses take advantage of emerging technologies as well as the ability to absorb the technology while also performing corresponding research and development and training activities</p>
+              <span><a href="#"><input type="submit" style="margin-top: 15px;" value="LEARN MORE" ></a></span>
+          </div>
+          <div class="col">
+              <img src="asset/images/male-collecting-data-from-server-2426392 1 (1).png" alt="" id="collecting">
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+  <div style="background-color: white; padding-bottom: 175PX; width: 100%;" id="research">
+        <div class="row" style="background-color: #F2EFE6; text-align: justify; margin-top: -170px; width: 80%; position: absolute; box-shadow: 0px 4px 30px rgba(0, 18, 66, 0.12); margin-left: 10.5%;" > 
+            <div class="col">
+                <img src="asset/images/pexels-oladimeji-ajegbile-2698465 1.png" alt="" style="width: 376px; height: 481px; margin-left: -15px;" >
+            </div>
+            <div class="col" style="margin: auto;">
+                <img src="asset/images/colon.png" alt="" style="margin-bottom: 50px; margin-top: 50px;"> <img src="asset/images/colon.png" alt="" style="margin-bottom: 50px; margin-top: 50px;">
+                <p style="text-align: justify; line-height: 30px; margin-right: 50px;">An end user solution that essentially manages their insurance cover portfolio and guides desicion making as regards type of cover and affordable policies. This provides the customer with the right kind of cover across all facets of the daily lives & business interactions</p>
+                <div style="text-align: right; font-size: 16px; margin-right: 50px;"><p>Valentine Ofili</p>
+                    <p style="font-size: 14px; font-style: italic;"id="research"> Software Engineer</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+              <div class="row">
+                <p  id="second">INNOVATIVE SOLUTIONS FOR INSURTECH</p>
+                <p  id="secon">Our AI powered platform manages the insurance portfolio of average citizens in <br>these countries based on environmental risk factors</p>
+              </div>
+              <div class="row" style="margin-top: 150px; margin-left: 3%;">
           
+                  <div class="col">
+                      <p style="color: #4BA0FE; font-size: 20px;" >AI POWERED PLATFORM</p>
+                      <p style="text-align: justify; margin-bottom: 100px;">Our research also focuses on engineering our AI platform to address the need to build the public trust in the local insurance landscape by providing simplified consumer education and gather feedback from customers for continuous improvement.</p> 
+                  </div>
+                  <div class="col"  id="image" >
+                      <img src="asset/images/ai-powered-platform.png" alt="" style="width: 470px;">
+                  </div>
+              </div>
+              <div class="row" style="margin-top: 150px;margin-left: 3%; ">
+                    <div class="col">
+                        <img src="asset/images/insuretech.svg" alt="" style="width: 470px;height: 390px; ">
+                    </div>
+                    <div class="col"  id="insur" >
+                        <h2 style=" color:#4BA0FE ;font-size: 20PX;" >INSURTECH</h2>
+                        <p style="text-align: justify;">Our Insurtech product is an easy to use platform for getting various types of insurance cover ranging from Motor, Accident, Health, Life insurance and other types. We choose the best available insurance products from various trusted Insurance partners and provide the avenue to book new Policies, Cancel existing Policies, renew expired policies and view general policy information.</p>
+                    </div>
+                <div class="row" style="margin-top: 150px; margin-left: 0.5%;">
+                    <div class="col">
+                        <button class="sub">RESEARCH & ANALYTICS</button>
+                        <h2 style="color: #4BA0FE;font-size: 20PX; margin-top: 17px;" >OMNI PLATFORM TO MANAGE POLICIES</h2>
+                        <p style="text-align: justify;">We pull disparate policies into one platform for management and monitoring, creating on-demand insurance for micro-events like borrowing a friend's car, and the adoption of the peer-to-peer model to both create customized group coverage and incentivize positive choices through group rebates.</p>
+                    </div>
+                    <div class="col"  id="imag">
+                        <img src="asset/images/omni-platform.png" alt="" style="width: 470px;">
+                    </div>
+                </div>
+              </div>
         </div>
-        <div class="column" style="width: 535px; height: 360px;">
-          <h2 style=" color:#4BA0FE ;font-size: 20PX;" >INSURTECH</h2>
-          <p>Our Insurtech product is an easy to use platform for getting various types of insurance cover ranging from Motor, Accident, Health, Life insurance and other types. We choose the best available insurance products from various trusted Insurance partners and provide the avenue to book new Policies, Cancel existing Policies, renew expired policies and view general policy information.</p>
-        </div>
-      </div>
-      <div class="row" style="padding-top: 123px" >
-        <div class="column" >
-          <h2 style="color: #4BA0FE;font-size: 20PX; " >OMNI PLATFORM TO MANAGE POLICIES</h2>
-          <p>We pull disparate policies into one platform for management and monitoring, creating on-demand insurance for micro-events like borrowing a friend's car, and the adoption of the peer-to-peer model to both create customized group coverage and incentivize positive choices through group rebates.</p>
-        </div>
-        <div class="column" style="width: 535px; height: 360px;">
-          <img src="asset/images/omni-platform.png" alt="" >
-        </div>
-      </div>
-</div>
+  </div>
 
-<!--contact us section-->
-<div style="width: 100%; height: 475px;">
-    <img src="asset/images/nubeero_logo.png" alt="" style="margin-top: 65px; margin-left: 40%;">
-    <p style="color: #FFFFFF; opacity: 0.5; font-size: 17px; margin-top: 24px;  text-align: center;">Nubeero is a consultancy and technology <br>intermediation service provider that also offers <br>services in software development</p>
-    <p style="color: #FFFFFF;margin-top: 38px;margin-left: 46%;" id="contact">Contact Us</p>
-    
-    <i class="fa fa-facebook fa-2x" aria-hidden="true" style="margin-left: 44%;color: #fff;"></i>
-    <i class="fa fa-twitter fa-2x" aria-hidden="true" style="color: #fff;margin-left: 10px;"></i>
-    <i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: #fff; margin-left: 10px;"></i>
 
-<i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color: #fff; margin-left: 10px;"></i>
-</div>
+  
+
+  <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        <img src="asset/images/nubeero_logo.png" alt="" style="margin-top: 65px; margin-left: auto; margin-right: auto;">
+        <p style="color: #FFFFFF; opacity: 0.5; font-size: 17px; margin-top: 24px;  text-align: center;">Nubeero is a consultancy and technology <br>intermediation service provider that also offers <br>services in software development</p>
+        <p style="color: #FFFFFF;margin-top: 20px;margin-left: auto; text-align: center;margin-right: auto;" id="contact">Contact Us</p>
+        <div style="margin-right: auto; margin-left: auto;">
+            <i class="fa fa-facebook fa-2x" aria-hidden="true" style="color: #fff;"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true" style="color: #fff;margin-left: 10px;"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: #fff; margin-left: 10px;"></i>
+        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color: #fff; margin-left: 10px;"></i>
+        </div>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  <!--script-->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+
+</script>
 </body>
 </html>

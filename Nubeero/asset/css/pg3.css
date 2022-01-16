@@ -1,42 +1,136 @@
 
+html { scroll-behavior: smooth; }
+@font-face {
+  font-family: euclid ;
+  src: url(asset/font/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Light.ttf);
+}
 body{
     background-color: #1E2833;
     font-family: euclid;
 
   }
-  .navbar {
-    overflow: hidden;
-    background-color:rgba(0, 0, 0,);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    margin-left: -8px;
-    
-    
-      -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    border:1px solid rgba(255, 255, 255, 0.2);
-    border-left: none;
-    border-top: none;
-  }
-    
-  
-  .navbar a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 19px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
+  /*menu*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*header styly*/
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+            z-index: 1; 
+}
+/*hamburger menu*/
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFF;
+}
+/*other menu*/
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-link:hover{
+    color: #4BA0FE;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+@media only screen and (max-width: 1000px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
 .content{
     display: grid;
     justify-content: center;
@@ -52,6 +146,14 @@ body{
 
 hr{
     width: 650px ; 
+    margin-top: 10px;
+}
+@media only screen and (max-width:500px){
+   hr{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 h2{
@@ -103,9 +205,9 @@ a{
 }
 @media only screen and (max-width:500px){
     .button{
-        width: 500px;
+        width: 300px;
         height: 100px;
-        margin-left: 15%;
+        margin-left: 9%;
     }
 }
 
@@ -130,3 +232,14 @@ margin-left: 30px;
     color:hsl(213.17, 86.01%, 71.96%) ;
   }
 
+.top_q{
+    font-size: 35px; 
+    color: #fff; 
+    font-weight: 600;
+}
+@media only screen and (max-width:500px){
+    .top_q{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}

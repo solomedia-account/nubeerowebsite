@@ -21,23 +21,44 @@
         </style>
     </head>
     <body>
-        <nav class="navbar">
-             <img src="asset/images/logo.svg" style="padding-left: 4%; padding-top: 1%;">
-            <a href="#"   >CONTACT</a>
-            <a href="#"   >RESEARCH</a>
-            <a href="#"   >SERVICES</a>
-            <a href="#"   >WHAT WE DO</a>
-            <a href="#"   >HOME</a>
-        </nav>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo"><img src="asset/images/logo.svg" alt=""></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#whatwedo" class="nav-link">WHAT WE DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#research" class="nav-link">RESEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">CONTACT US</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+    </header>
+        
         <main class="content">
             <div class="cnt">
-                <p><span style="font-size: 35px; color: #fff; font-weight: 600;">What best describes you ?</span><br>Please let us know what type of business describes you</p>
+                <p><span class="top_q">What best describes you ?</span><br>Please let us know what type of business describes you</p>
                 <h2></h2>
                 
                                   
             </div>
-
             <hr>
+           <div class="but_div">
+           
             <br>
             <br>
             <br>
@@ -55,16 +76,14 @@
                   <b>Business or Company</b>
                 <p>A group more than 2 in number</p>
         </button>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+           
             <div>
      
-                <a href="index.html" >Back</a> <span><a href="softwareDevelopment2.html"><input type="submit" value="NEXT STEP"></a></span> 
+           </div>
                 
+                <a href="softwareDevelopment2.html"><button type="submit" class="btn btn-primary" style="background-color: #4BA0FE;width: 160px; height: 55px;border-radius: 90px; float: right; margin-top: 50px;">NEXT STEP</button>
+                </a>
+                        <a href="index.html"><p style="margin-top: 66px; color: white; padding-bottom: 195px; margin-left: 20px;">back</p></a>
                 <br>
                 <br>
                 <br>
@@ -73,6 +92,20 @@
                 <br>
             </div>   
         </main>
+        <!--script-->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+
+</script>
     </body>
 </html>
 <!-- ->

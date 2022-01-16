@@ -106,7 +106,39 @@
                   width: 400px;
               }
           }
-
+          
+          #software{
+            background-color: #F2EFE6; 
+            text-align: justify; 
+            margin-top: -170px; 
+            width: 80%; 
+            position: absolute; 
+            box-shadow: 0px 4px 30px rgba(0, 18, 66, 0.12);
+             margin-left: 10%;
+          }
+          @media only screen and (max-width:1000px) {
+              #software{
+                width: 100%;
+                margin-left: 0;
+              }
+          }
+          #begin > img{
+            width: 376px; 
+            height: 481px; 
+            margin-left: -15px;
+          }
+          @media only screen and (max-width:1000px) {
+              #begin > img{
+                width: 370;
+                height: 550px;
+              }
+          }
+          @media only screen and (max-width:500px) {
+              #begin > img{
+                width: 310px;
+                height: 480px;
+              }
+          }
           #image{
             margin-left: 86px;
             margin-top: -100px; 
@@ -122,26 +154,38 @@
                  margin-left:0 ;
               }
           }
-          #imag{
-            margin-left: 86px;
+          #imag >img{
+            
             margin-top: -100px; 
+            width: 470px;
+            
           }
           @media only screen and (max-width:1000px) {
-              #imag{
+              #imag >img{
                  margin-left:0 ;
                  margin-top: 0;
+                 width: 300px;
               }
           }
           @media screen and (max-width:500px) {
             #image{
                  margin-left:0 ;
                  
+                 width: 300px;
+              }
+          }
+          #ro{
+            margin-top: 150px;
+             margin-left: 3%;
+          }
+          @media screen and (max-width:500px) {
+            #ro{
+                 margin-left:0 ;
+                 
                  
               }
           }
-          #insur{
-            margin-left: 86px
-          }
+          
           @media only screen and (max-width:1000px) {
               #insur{
                  margin-left:0 ;
@@ -164,7 +208,7 @@
         #some{
             padding-bottom:360px ; 
             margin-left: 10%;
-         background-image: url();
+         
          background-image: linear-gradient(to right, rgba(30,40,51,1.0), rgba(30,40,51,0.9)),url('asset/images/hexagon.png');
 
                 background-repeat: no-repeat; 
@@ -172,8 +216,73 @@
                 z-index: -1;
                 
         }
+        @media only screen and (max-width:900px) {
+              #some{
+                 margin-left:1%;
+                 
+              }
+          }
+          #merchant_services{
+            background-color: #171719;  
+            margin-left: 30px; 
+            
+            background-image: url('asset/images/merchant_services.png'); 
+            background-repeat: no-repeat; 
+            background-size: 100% 230px;
+          }
+          @media only screen and (max-width:900px) {
+            #merchant_services{
+                 margin-left:4%;
+                 margin-right: 4%;
+                 width: 100%;
+                 margin-top: 30px;
+              }
+          }
+          #insure_tech{
+            background-color: #171719; 
+            background-image: url('asset/images/insure_tech.png'); 
+            background-repeat: no-repeat; 
+            background-size: 100% 230px; 
+          }
+          @media only screen and (max-width:900px) {
+            #insure_tech{
+                 margin-left:4%;
+                 margin-right: 4%;
+                 width: 100%;
+                 margin-top: 30px;
+              }
+          }
+          #software_development{
+            background-color:#171719;  
+            background-image: url('asset/images/software_development.png'); 
+            background-repeat: no-repeat; 
+            background-size: 100% 230px; 
+          }
+          @media only screen and (max-width:900px) {
+            #software_development{
+                 margin-left:4%;
+                 margin-right: 4%;
+                 width: 100%;
+                 margin-top: 30px;
+              }
+          }
+          #intermediation{
+            background-color: #171719; 
+            margin-left: 30px;  
+            background-image: url('asset/images/intermediation.png'); 
+            background-repeat: no-repeat; 
+            background-size: 100% 230px; 
+          }
+          @media only screen and (max-width:900px) {
+            #intermediation{
+                 margin-left:4%;
+                 margin-right: 4%;
+                 width: 100%;
+                 margin-top: 30px;
+              }
+          }
         #top_logo{
-            margin-left: -35%;
+            margin-left: -40%;
         }
         @media only screen and (max-width:900px) {
               #top_logo{
@@ -260,7 +369,7 @@ a {
     font-weight: 500;
     color: #482ff7;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -303,11 +412,39 @@ a {
     }
 
 }
-        
+    #top_section{
+        color: white;
+         margin-left: 10%;
+    }    
+    @media only screen and (max-width:1000px) {
+              #top_section{
+                margin-left: 0;
+              }
+          }
+      .top_word{
+        font-size: 60px; 
+        font-weight: 400;
+        margin-top: 200px;
+      } 
+      @media only screen and (max-width:1000px) {
+             .top_word{
+                font-size: 45px;
+              }
+          }  
+          
+        #top_logo_section{
+            padding-bottom: 125px; 
+            margin-top: 300px; 
+            margin-left: 7%;
+        }
+        @media only screen and (max-width:1000px) {
+             #top_logo_section{
+                margin-left: 0;
+              }
+          } 
     </style>
 </head>
 <body >
-
     <header class="header">
         <nav class="navbar">
             <a href="#" class="nav-logo"><img src="asset/images/logo.svg" alt=""></a>
@@ -335,84 +472,78 @@ a {
             </div>
         </nav>
 </header>
-<div class="container" style="color: white; margin-left: 10%;" >
-    <P style="font-size: 60px; font-weight: 400;margin-top: 200px;">Intermediation, Tech <br>Solutions & Consulting</P>
-    <P style="font-weight: 400; font-size: 20px;">Nubeero is a consultancy and technology intermediation service <br>provider that also offers services in software development</P>
-    <span><a href="softwareDevelopment.html"><input type="submit" value="GET STARTED" id="submi"></a></span>
-</div>
-  <div class="container" style="padding-bottom: 125px; margin-top: 300px; margin-left: 7%;">
-      <div class="row">
-          <div class="col">
-              <h4 style="font-size: 30px;margin-left: 8%; color: white;" id="whatwedo">USER PARTNERS</h4>
-          </div>
-          <div class="col" id="top_logo" >
+    
+<div class="container"  id="top_section">
+    <P class="top_word">Intermediation, Tech <br>Solutions & Consulting</P>
+        <P style="font-weight: 400; font-size: 20px;">Nubeero is a consultancy and technology intermediation service <br>provider that also offers services in software development</P>
+        <span><a href="softwareDevelopment.html"><input type="submit" value="GET STARTED" id="submi"></a></span>
+    </div>
+    <div class="container"  id="top_logo_section">
+        <div class="row">
+            <div class="col">
+                <h4 style="font-size: 30px;margin-left: 8%; color: white;" id="whatwedo">USER PARTNERS</h4>
+            </div>
+            <div class="col" id="top_logo" >
+                
+                <img src="asset/images/Old_Mutual_logo logo.svg" alt="" style="width: 200px; margin-left: 50px;margin-top: 10px;">
+                <img src="asset/images/crowd_force.svg" alt=""style='margin-left:50px; width: 200px;margin-top: 10px;'>
+                <img src="asset/images/access_bank logo.svg" alt="" style="margin-left:50px; width: 200px;margin-top: 10px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
               
-              <img src="asset/images/Old_Mutual_logo logo.svg" alt="" style="width: 220px;">
-              <img src="asset/images/crowd_force.svg" alt=""style='margin-left:50px; width: 220px'>
-              <img src="asset/images/access_bank logo.svg" alt="">
-          </div>
-      </div>
-      <div class="row">
-          <div class="col">
-            
-          </div>
-          <div class="col" style="margin-left: -350px;" >
-            <img src="asset/images/accelerex_logo.png" style="margin-left: 25px;" alt="" >
-            <img src="asset/images/suntrust_logo.png" style="margin-left: 25px;" alt="" >
-            <img src="asset/images/leadway_logo.png" style="margin-left: 25px" alt="" >
-            <img src="asset/images/rubies_logo.png" style="margin-left: 25px;" alt="" id="whatWeDo">
-          </div>
-         
-      </div>
-  </div>
-
-
-  <div class="container" id="some" >
-      <div class="row">
-          <div class="col" style="background-color: #171719; background-image: url('asset/images/insure_tech.png'); background-repeat: no-repeat; background-size: 100% 230px; ">
-              <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px; margin-top: 250px;">INSURANCE TECH</h3> 
-              <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are using deep learning trained artificial intelligence (AI) to handle the tasks of Insurance brokers and find the right mix of policies to complete an individuals or Group coverage.</P>
-              <span><a href="motorVehicle.html"><input type="submit" value="GET INSURANCE" style="margin-top: 70px;"></a></span>
-              <br><br><br><br>
-          </div>
-          <div class="col" style="background-color: #171719; ; margin-left: 30px; background-image: url('asset/images/merchant_services.png'); background-repeat: no-repeat; background-size: 100% 230px;">
-              <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px; margin-top: 250px;">MERCHANT SERVICES</h2>
-              <p style="color: #fff; margin-left: 20px;">Maximize your business’s operations with innovative and trusted merchant services, payment processing services and solutions.</p>
-              <span ><a href=" https://relief.nubeero.com/"><input type="submit" value="GET STARTED" style="margin-top: 60px;" ></a></span>
-          </div>
-          <div class="col"> 
-              <h2 style=" color:#4BA0FE ;font-size: 40PX; font-weight: 400; margin-left: 30px; margin-top: 70PX;">WHAT WE DO</h2>
-              <p style="color: #fff; margin-left: 20px; margin-top: 40px; text-align: justify;">We provide innovative solutions for insurance, business process optimization & ecommerce services. Our promise is that we are growth enablers serving the needs of the industries in which we play.</p>
-          </div>
-      </div>
-      <div class="row" style="margin-top:20px; text-align: justify;">
-          <div class="col" style="background-color:#171719;  background-image: url('asset/images/software_development.png'); background-repeat: no-repeat; background-size: 100% 230px; ">
-              <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px;margin-top: 250px;">SOFTWARE DEVELOPMENT</h3> 
-              <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are an experienced Enterprise Solutions delivery company with proven track records in various sectors, including Digital Insurance Solutions, Commercial banking, Digital Banking, Agency Banking, Digital Insurance...</P>
-              <span><a href="softwareDevelopment.html" ><input type="submit" style="margin-top: 50px; "value="GET STARTED" ></a></span>
-              <br><br><br><br>
-          </div>
-          <div class="col" style="background-color: #171719; margin-left: 30px;  background-image: url('asset/images/intermediation.png'); background-repeat: no-repeat; background-size: 100% 230px; ">
-              <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px;margin-top: 250px;">INTERMEDIATION</h2>
-              <p style="color: #fff; margin-left: 20px;">We are positioned to help businesses take advantage of emerging technologies as well as the ability to absorb the technology while also performing corresponding research and development and training activities</p>
-              <span><a href="#"><input type="submit" style="margin-top: 15px;" value="LEARN MORE" ></a></span>
-          </div>
-          <div class="col">
-              <img src="asset/images/male-collecting-data-from-server-2426392 1 (1).png" alt="" id="collecting">
-          </div>
-      </div>
-  </div>
-
-
-
-
-
+            </div>
+            <div class="col" style="margin-left: -350px; padding-bottom: 100px;" >
+              <img src="asset/images/accelerex_logo.png" style="margin-left: 35px;margin-top: 10px;" alt="" >
+              <img src="asset/images/suntrust_logo.png" style="margin-left: 35px;margin-top: 10px;" alt="" >
+              <img src="asset/images/leadway_logo.png" style="margin-left: 25px;margin-top: 10px;" alt="" >
+              <img src="asset/images/rubies_logo.png" style="margin-left: 35px;margin-top: 10px;" alt="" id="whatWeDo">
+            </div>
+           
+        </div>
+    </div>
+    <div class="container" id="some" >
+        <div class="row">
+            <div class="col"  id="insure_tech">
+                <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px; margin-top: 250px;">INSURANCE TECH</h3> 
+                <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are using deep learning trained artificial intelligence (AI) to handle the tasks of Insurance brokers and find the right mix of policies to complete an individuals or Group coverage.</P>
+                <span><a href="motorVehicle.html"><input type="submit" value="GET INSURANCE" style="margin-top: 70px;"></a></span>
+                <br><br><br><br><br>
+            </div>
+            <div class="col"  id="merchant_services">
+                <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px; margin-top: 250px;">MERCHANT SERVICES</h2>
+                <p style="color: #fff; margin-left: 20px;">Maximize your business’s operations with innovative and trusted merchant services, payment processing services and solutions.</p>
+                <span  style="padding-bottom: 70px;"><a href=" https://relief.nubeero.com/"><input type="submit" value="GET STARTED" style="margin-top: 60px;" ></a></span><br><br><br>
+            </div>
+            <div class="col" style="margin-left: 25px;width: 100%;"> 
+                <h2 style=" color:#4BA0FE ;font-size: 40PX; font-weight: 400; margin-left: 40px; margin-top: 70PX;">WHAT WE DO</h2>
+                <p style="color: #fff; margin-left: 20px; margin-top: 40px; text-align: justify;">We provide innovative solutions for insurance, business process optimization & ecommerce services. Our promise is that we are growth enablers serving the needs of the industries in which we play.</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px; text-align: justify;">
+            <div class="col"  id="software_development">
+                <h3 style="color: #4BA0FE; font-weight: 400; font-size: 18px; margin-left: 20px;margin-top: 250px;">SOFTWARE DEVELOPMENT</h3> 
+                <P style="color: #fff; font-size: 14px; margin-left: 20px;">We are an experienced Enterprise Solutions delivery company with proven track records in various sectors, including Digital Insurance Solutions, Commercial banking, Digital Banking, Agency Banking, Digital Insurance...</P>
+                <span><a href="softwareDevelopment.html" ><input type="submit" style="margin-top: 50px; "value="GET STARTED" ></a></span>
+                <br><br><br><br>
+            </div>
+            <div class="col"  id="intermediation">
+                <h2 style=" color:#4BA0FE ;font-size: 18px; font-weight: 400; margin-left: 20px;margin-top: 250px;">INTERMEDIATION</h2>
+                <p style="color: #fff; margin-left: 20px;">We are positioned to help businesses take advantage of emerging technologies as well as the ability to absorb the technology while also performing corresponding research and development and training activities</p>
+                <span><a href="#"><input type="submit" style="margin-top: 15px;" value="LEARN MORE" ></a></span><br><br>
+            </div>
+            <div class="col">
+                <img src="asset/images/male-collecting-data-from-server-2426392 1 (1).png" alt="" id="collecting">
+            </div>
+        </div>
+    </div>
 
 
   <div style="background-color: white; padding-bottom: 175PX; width: 100%;" id="research">
-        <div class="row" style="background-color: #F2EFE6; text-align: justify; margin-top: -170px; width: 80%; position: absolute; box-shadow: 0px 4px 30px rgba(0, 18, 66, 0.12); margin-left: 10.5%;" > 
-            <div class="col">
-                <img src="asset/images/pexels-oladimeji-ajegbile-2698465 1.png" alt="" style="width: 376px; height: 481px; margin-left: -15px;" >
+        <div class="row"  id="software"> 
+            <div class="col" id="begin">
+                <img src="asset/images/pexels-oladimeji-ajegbile-2698465 1.png" alt=""  >
             </div>
             <div class="col" style="margin: auto;">
                 <img src="asset/images/colon.png" alt="" style="margin-bottom: 50px; margin-top: 50px;"> <img src="asset/images/colon.png" alt="" style="margin-bottom: 50px; margin-top: 50px;">
@@ -427,35 +558,36 @@ a {
                 <p  id="second">INNOVATIVE SOLUTIONS FOR INSURTECH</p>
                 <p  id="secon">Our AI powered platform manages the insurance portfolio of average citizens in <br>these countries based on environmental risk factors</p>
               </div>
-              <div class="row" style="margin-top: 150px; margin-left: 3%;">
+              <div class="row"  id="ro">
           
                   <div class="col">
                       <p style="color: #4BA0FE; font-size: 20px;" >AI POWERED PLATFORM</p>
                       <p style="text-align: justify; margin-bottom: 100px;">Our research also focuses on engineering our AI platform to address the need to build the public trust in the local insurance landscape by providing simplified consumer education and gather feedback from customers for continuous improvement.</p> 
                   </div>
-                  <div class="col"  id="image" >
-                      <img src="asset/images/ai-powered-platform.png" alt="" style="width: 470px;">
+                  <div class="col"  id="imag" >
+                      <img src="asset/images/ai-powered-platform.png" alt="" >
                   </div>
               </div>
-              <div class="row" style="margin-top: 150px;margin-left: 3%; ">
-                    <div class="col">
-                        <img src="asset/images/insuretech.svg" alt="" style="width: 470px;height: 390px; ">
+              <div class="row"  id="ro">
+                    <div class="col" id="imag">
+                        <img src="asset/images/insuretech.svg" alt="" >
                     </div>
                     <div class="col"  id="insur" >
-                        <h2 style=" color:#4BA0FE ;font-size: 20PX;" >INSURTECH</h2>
+                        <h2 style=" color:#4BA0FE ;font-size: 20PX; margin-top: 10px;" >INSURTECH</h2>
                         <p style="text-align: justify;">Our Insurtech product is an easy to use platform for getting various types of insurance cover ranging from Motor, Accident, Health, Life insurance and other types. We choose the best available insurance products from various trusted Insurance partners and provide the avenue to book new Policies, Cancel existing Policies, renew expired policies and view general policy information.</p>
                     </div>
-                <div class="row" style="margin-top: 150px; margin-left: 0.5%;">
+                    </div>
+                <div class="row"  id="ro">
                     <div class="col">
                         <button class="sub">RESEARCH & ANALYTICS</button>
                         <h2 style="color: #4BA0FE;font-size: 20PX; margin-top: 17px;" >OMNI PLATFORM TO MANAGE POLICIES</h2>
                         <p style="text-align: justify;">We pull disparate policies into one platform for management and monitoring, creating on-demand insurance for micro-events like borrowing a friend's car, and the adoption of the peer-to-peer model to both create customized group coverage and incentivize positive choices through group rebates.</p>
                     </div>
                     <div class="col"  id="imag">
-                        <img src="asset/images/omni-platform.png" alt="" style="width: 470px;">
+                        <img src="asset/images/omni-platform.png" alt="" >
                     </div>
                 </div>
-              </div>
+              
         </div>
   </div>
 

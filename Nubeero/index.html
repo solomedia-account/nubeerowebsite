@@ -442,6 +442,35 @@ a {
                 margin-left: 0;
               }
           } 
+
+
+
+          /* footer*/
+          .form-control{
+        border: 1px solid #6B7076;
+        border-radius: 20px;
+        background-color: #1E2833;
+        height: 60px;
+    
+    }
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #6B7076;
+  background-color: #1E2833;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+    #message{
+        height: 221px;
+        
+    }
+    .img-container {
+        text-align: center;
+      }
     </style>
 </head>
 <body >
@@ -450,7 +479,7 @@ a {
             <a href="#" class="nav-logo"><img src="asset/images/logo.svg" alt=""></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#html" class="nav-link">HOME</a>
+                    <a href="#top" class="nav-link">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a href="#whatwedo" class="nav-link">WHAT WE DO</a>
@@ -596,20 +625,70 @@ a {
 
   <!-- Footer -->
 <footer class="page-footer font-small blue">
+    <div class="container" style="margin-top: 100px;margin-left: auto; margin-right: auto; padding-bottom: 100px;">
+   
+        <div class="row">
+            <div class="col-sm">
+                <div class="img-container">
+                <img src="asset/images/logo.svg" alt="" style="margin-left: auto; margin-right: auto; text-align: center;">
+            </div>
+        <p style="color: #FFFFFF; opacity: 0.5; font-size: 17px; margin-top: 24px;  text-align: center;">Nubeero is a consultancy and technology <br>intermediation service provider that also offers <br>services in software development</p>
+        <p style="color: #FFFFFF;margin-top: 20px; text-align: center;" id="contact">Contact Us</p>
+        
+        <div style="margin-top:20px; padding-bottom: 160px;font-size: 20px;margin-left: auto; margin-right: auto;">
+            <p style="color: #FFFFFF; opacity: 0.5;font-size: 16px;">EMAIL US</p>
+            
+            <a href="mailto:info@nubeero.com" style="color: #fff; text-decoration: none;">info@nubeero.com</a>
+            <a href="https://www.facebook.com/nubeero"><i class="fa fa-facebook fa" aria-hidden="true" style="color: #fff;margin-left: 30px;"></i></a>
+          <a href="https://twitter.com/nubeero"><i class="fa fa-twitter fa" aria-hidden="true" style="color: #fff;margin-left: 30px;"></i></a>
+          <a href="https://www.instagram.com/nubeero_ng/"><i class="fa fa-instagram fa" aria-hidden="true" style="color: #fff; margin-left: 30px;"></i></a>
+          <a href="https://www.linkedin.com/company/nubeero/"><i class="fa fa-linkedin-square fa" aria-hidden="true" style="color: #fff; margin-left: 30px;"></i></a>
+        </div>
+            </div>
+            
+            <div class="col-sm">
+                
 
-    <!-- Copyright -->
+
+        <div class="content">
+            <h2 style="font-weight: 100; font-size: 35px; text-align: center; color: white;">Contact Us</h2>
+            <p style="color: #BBBEC2; text-align: center;">Got a question or comment? Get in touch with us</p>
+            <hr>
+            <form style="color: white;">
+                <div class="form-group" >
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <input type="for" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="Enter your first and last name" style="background-color: #1E2833; color: white;" >  
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input type="for" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="ex:janedoe000@mail.com" style="background-color: #1E2833; color: white;" >  
+                </div>
+                
+                <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="typing..." style="height:121px; color: white;"></textarea>
+            </form>
+            
+            <a href="#"><button type="submit" class="btn btn-primary" style="background-color: #4BA0FE;width: 160px; height: 55px;border-radius: 90px; float: right; margin-top: 30px;">SEND MESSAGE</button>
+            </a>
+            
+          </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Copyright 
     <div class="footer-copyright text-center py-3">
         <img src="asset/images/nubeero_logo.png" alt="" style="margin-top: 65px; margin-left: auto; margin-right: auto;">
         <p style="color: #FFFFFF; opacity: 0.5; font-size: 17px; margin-top: 24px;  text-align: center;">Nubeero is a consultancy and technology <br>intermediation service provider that also offers <br>services in software development</p>
         <p style="color: #FFFFFF;margin-top: 20px;margin-left: auto; text-align: center;margin-right: auto;" id="contact">Contact Us</p>
         <div style="margin-right: auto; margin-left: auto;">
-            <i class="fa fa-facebook fa-2x" aria-hidden="true" style="color: #fff;"></i>
-        <i class="fa fa-twitter fa-2x" aria-hidden="true" style="color: #fff;margin-left: 10px;"></i>
-        <i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: #fff; margin-left: 10px;"></i>
-        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color: #fff; margin-left: 10px;"></i>
+            <a href="https://www.facebook.com/nubeero"><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color: #fff;"></i></a>
+            <a href="https://twitter.com/nubeero"><i class="fa fa-twitter fa-2x" aria-hidden="true" style="color: #fff;margin-left: 40px;"></i></a>
+            <a href="https://www.instagram.com/nubeero_ng/"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: #fff; margin-left: 40px;"></i></a>
+            <a href="https://www.linkedin.com/company/nubeero/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color: #fff; margin-left: 40px;"></i></a>
         </div>
     </div>
-    <!-- Copyright -->
+     Copyright -->
   
   </footer>
   <!-- Footer -->
